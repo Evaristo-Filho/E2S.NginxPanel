@@ -16,14 +16,9 @@ As part of my portfolio, It will offer control only over .Net solutions.
 ## Milestones
 - [x] Initial Concept
 - [x] Basic functionalities definition
+- [x] Basic Documentation
 - [ ] Basic low fidelity UX Design
 - [ ] Kickoff
-- [ ] MAUI Interfaces
-- [ ] React interfaces
-- [ ] Angular Interfaces
-- [ ] Services implementation
-- [ ] Hardware integration
-- [ ] External services integration
 
 > [!CAUTION]
-> Not safe for production environment.
+> Not safe for any kind of usage.
