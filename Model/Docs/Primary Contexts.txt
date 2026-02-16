@@ -1,0 +1,15 @@
+main: The top-level, global context where directives that affect the entire NGINX server instance are placed (e.g., worker_processes, user, error_log). Directives outside any other block are considered part of the main context.
+
+events: Configures global connection processing settings, such as how worker processes handle connections and the number of simultaneous connections (e.g., worker_connections, multi_accept). This block must be in the main context and can appear only once.
+
+http: Contains directives for handling HTTP and HTTPS traffic, including settings for mime types, logging, caching, and proxy configurations. This context can contain multiple server and upstream blocks.
+
+server: Defines a virtual server, allowing NGINX to host multiple websites or applications on a single instance by listening on specific ports and matching server names (e.g., listen, server_name, root). A server block resides within the http, mail, or stream context.
+
+location: Used for detailed request routing and configuration based on the request URI (e.g., specific paths, file extensions, or regular expressions). A location block is typically nested within a server block, but can also be nested within another location block.
+
+upstream: Defines groups of backend servers for load balancing and proxying. It specifies the methods for distributing traffic across the defined servers. It can be found in the http or stream context.
+
+stream: Handles raw TCP and UDP traffic, offering a similar structure to the http context with nested server and upstream blocks for network stream processing.
+
+mail: Provides the ability to implement mail proxy functionality.  
