@@ -17,8 +17,12 @@ As part of my portfolio, It will offer control only over .Net solutions.
 - [x] Initial Concept
 - [x] Basic functionalities definition
 - [x] Basic Documentation
-- [ ] Basic low fidelity UX Design
-- [ ] Kickoff
+- [x] Basic low fidelity UX Design
+- [x] Kickoff
+- [ ] Maui FrontEnd
+- [ ] Backend
+- [ ] Security features
+
 
 > [!CAUTION]
 > Not safe for any kind of usage.
