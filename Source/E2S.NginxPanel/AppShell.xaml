@@ -7,7 +7,7 @@
     Title="E2S.NginxPanel">
 
     <ShellContent
-        Title="Nginx Panel"
+        
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 

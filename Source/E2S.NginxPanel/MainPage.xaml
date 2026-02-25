@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:TopBar="clr-namespace:E2S.NginxPanel.Sections.Top"
              x:Class="E2S.NginxPanel.MainPage">
 
     <Grid>
@@ -14,7 +15,7 @@
             <ColumnDefinition Width="*"/>
 
         </Grid.ColumnDefinitions>
-        <BoxView x:Name="Top" Grid.Row="0" Grid.ColumnSpan="2" Color="LightSkyBlue"   />
+        <TopBar:TopBar Grid.Row="0" Grid.ColumnSpan="2"/>
         <BoxView x:Name="Side" Grid.Row="1" Grid.Column="0" Color="Red"/>
         <BoxView x:Name="Main" Grid.Row="1" Grid.Column="1" Color="gray"/>
         <BoxView x:Name="Bottom" Grid.Row="2" Grid.ColumnSpan="2" Color="Black"   />
