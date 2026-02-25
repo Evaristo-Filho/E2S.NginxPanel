@@ -19,7 +19,7 @@ As part of my portfolio, It will offer control only over .Net solutions.
 - [x] Basic Documentation
 - [x] Basic low fidelity UX Design
 - [x] Kickoff
-- [ ] Maui FrontEnd
+- [ ] MAUI FrontEnd
 - [ ] Backend
 - [ ] Security features
 
