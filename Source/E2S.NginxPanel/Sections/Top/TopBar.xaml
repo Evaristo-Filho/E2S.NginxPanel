@@ -2,17 +2,19 @@
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="E2S.NginxPanel.Sections.Top.TopBar">
-    <HorizontalStackLayout>
-        
-        <Button/>
-        <Button/>
-        <Button/>
-        <Button/>
-        <Button/>
-        <Button/>
-        <Button/>
-        <Button/>
-        
-        <SearchBar></SearchBar>
-    </HorizontalStackLayout>
+    
+        <HorizontalStackLayout>
+            <Border>
+                <HorizontalStackLayout>
+                    <Button x:Name="myButton"/>
+                    <Button/>
+                    <Button/>
+                    <Button/>
+                    <Button/>
+                </HorizontalStackLayout>
+            </Border>
+            <Border></Border>
+            <SearchBar></SearchBar>
+        </HorizontalStackLayout>
+    
 </ContentView>

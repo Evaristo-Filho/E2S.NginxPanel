@@ -53,3 +53,5 @@ CodeCoverage/
 TestResult.xml
 nunit-*.xml
 /nginx-1.28.1
+/.vs
+/Model/Diagrams
