@@ -9,26 +9,30 @@
         <Setter Property="MinimumHeightRequest" Value="30"></Setter>
         <Setter Property="MaximumHeightRequest" Value="30"></Setter>
         <Setter Property="CornerRadius" Value="0"></Setter>
-        
+
         <Setter Property="VisualStateManager.VisualStateGroups">
             <VisualStateGroupList>
                 <VisualStateGroup Name="CommonStates">
-                    <VisualState Name="Normal" />
-                    <VisualState Name="Focused">
-                        <VisualState.Setters>
-                            <Setter Property="BackgroundColor" Value="#DDDDFF" />
-                        </VisualState.Setters>
-                    </VisualState>
-                    <VisualState Name="Pressed">
-                        <VisualState.Setters>
-                            <Setter Property="BackgroundColor" Value="#CCCCFF" />
-                        </VisualState.Setters>
-                    </VisualState>
-                    <VisualState Name="Unfocused">
+
+                    <VisualState Name="Normal">
                         <VisualState.Setters>
                             <Setter Property="BackgroundColor" Value="#EEEEFF" />
+                            
                         </VisualState.Setters>
                     </VisualState>
+                    <VisualState Name="PointerOver">
+                        <VisualState.Setters>
+                            <Setter Property="BackgroundColor" Value="#E0E0FF" />
+                        </VisualState.Setters>
+                    </VisualState>
+                    <VisualState Name="Focused">
+                        <VisualState.Setters>
+                            <Setter Property="BackgroundColor" Value="#CCCCFF"/>
+                            <Setter Property="BorderWidth" Value="2" />
+                           
+                        </VisualState.Setters>
+                    </VisualState>
+                    
                 </VisualStateGroup>
             </VisualStateGroupList>
         </Setter>
@@ -42,12 +46,20 @@
         <Setter Property="MinimumWidthRequest" Value="300"></Setter>
         <Setter Property="MinimumHeightRequest" Value="30"></Setter>
         <Setter Property="MaximumHeightRequest" Value="30"></Setter>
+        <Setter Property="VisualStateManager.VisualStateGroups">
+            <VisualStateGroupList>
+                <VisualStateGroup>
+                    <VisualState Name="Normal"/>
+
+                </VisualStateGroup>
+            </VisualStateGroupList>
+        </Setter>
     </Style>
 
     <Style  TargetType="Border">
         <Setter Property="StrokeShape" Value="RoundRectangle 100,100,100,100"></Setter>
         <Setter Property="MaximumHeightRequest" Value="30"></Setter>
-        
+
     </Style>
 
 </ResourceDictionary>
