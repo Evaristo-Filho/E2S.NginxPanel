@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="E2S.NginxPanel.Sections.Top.Component.ServerControl"
+             x:Name="SControl">
+
+
+    <ContentView.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="Blue" />
+            <Setter Property="MinimumHeightRequest" Value="10" />
+            <Setter Property="MinimumWidthRequest" Value="40" />
+        </Style>
+        <Style TargetType="Border">
+            <Setter Property="StrokeShape" Value="RoundRectangle 10,10,10,10"></Setter>
+            <Setter Property="MinimumHeightRequest" Value="30"></Setter>
+            <Setter Property="MaximumHeightRequest" Value="40"></Setter>
+        </Style>
+    </ContentView.Resources>
+
+    <Border >
+        <HorizontalStackLayout x:Name="ServerControlContainer">
+            <Border>
+                <HorizontalStackLayout>
+                    <Button x:Name="Start" />
+                    <Button x:Name="Refresh"></Button>
+                </HorizontalStackLayout>
+            </Border>
+            <Button x:Name="Stop"></Button>
+        </HorizontalStackLayout>
+    </Border>
+
+</ContentView>
