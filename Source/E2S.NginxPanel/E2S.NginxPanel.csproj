@@ -89,11 +89,15 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Resources\Components\ServerControl\MyRes.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Resources\Components\ServerControl\ServerControl.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Resources\Components\ServerControl\SCStyle.xaml">
-	    <Generator></Generator>
+	    <Generator>MSBuild:Compile</Generator>
+	    <CustomToolNamespace></CustomToolNamespace>
 	  </MauiXaml>
 	  <MauiXaml Update="Sections\Top\TopBar.xaml">
 	    <Generator>MSBuild:Compile</Generator>

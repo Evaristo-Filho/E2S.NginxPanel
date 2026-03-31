@@ -17,7 +17,7 @@
                 <Button/>
             </HorizontalStackLayout>
         </Border>
-        <Component:ServerControl MinimumWidthRequest="" ></Component:ServerControl>
+        <Component:ServerControl></Component:ServerControl>
         <SearchBar></SearchBar>
 
     </HorizontalStackLayout>
