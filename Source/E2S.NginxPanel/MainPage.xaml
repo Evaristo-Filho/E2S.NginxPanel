@@ -2,7 +2,9 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:TopBar="clr-namespace:E2S.NginxPanel.Sections.Top"
+             xmlns:SidePanel="clr-namespace:E2S.NginxPanel.Sections.SidePanel"
              x:Class="E2S.NginxPanel.MainPage">
+                
 
     <Grid>
         <Grid.RowDefinitions>
@@ -16,11 +18,9 @@
 
         </Grid.ColumnDefinitions>
         <TopBar:TopBar Grid.Row="0" Grid.ColumnSpan="2"/>
-        <BoxView x:Name="Side" Grid.Row="1" Grid.Column="0" Color="Red"/>
+        <SidePanel:SidePanel x:Name="Side" Grid.Row="1" Grid.Column="0" />
         <BoxView x:Name="Main" Grid.Row="1" Grid.Column="1" Color="gray"/>
         <BoxView x:Name="Bottom" Grid.Row="2" Grid.ColumnSpan="2" Color="Black"   />
-
-
     </Grid>
 
 </ContentPage>

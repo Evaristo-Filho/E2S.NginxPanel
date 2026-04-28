@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:E2S.NginxPanel.Sections.SidePanel"
+             x:Class="E2S.NginxPanel.Sections.SidePanel.SidePanel"
+             x:Name="SidePanelContent"
+             x:DataType="local:SidePanelVm">
+    <ContentView.BindingContext>
+        <local:SidePanelVm></local:SidePanelVm>
+    </ContentView.BindingContext>
+    
+
+
+
+
+    <CollectionView ItemsSource="{Binding   TestList}" Background="LightGray" EmptyView="No Data" x:Name="MyList">
+        <CollectionView.ItemTemplate>
+            <DataTemplate x:DataType="x:String">
+                <Label Text="{Binding .}" ></Label>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
+
+
+
+
+</ContentView>
+ 

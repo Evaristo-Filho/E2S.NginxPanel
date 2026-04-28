@@ -85,7 +85,7 @@
 	<ItemGroup>
 		<PackageReference Include="CommunityToolkit.Maui.Markup" Version="7.0.1" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="10.0.51" />
-		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="10.0.5" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="10.0.7" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -106,6 +106,12 @@
 
 	<ItemGroup>
 	  <Folder Include="Sections\SidePanel\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Reference Update="C:\Users\evari\.nuget\packages\microsoft.web.webview2\1.0.3179.45\buildTransitive\..\\lib_manual\net5.0-windows10.0.17763.0\Microsoft.Web.WebView2.Wpf.dll">
+	    <SpecificVersion>True</SpecificVersion>
+	  </Reference>
 	</ItemGroup>
 
 </Project>
