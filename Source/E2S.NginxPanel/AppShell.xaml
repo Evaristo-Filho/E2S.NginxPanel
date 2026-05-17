@@ -6,9 +6,17 @@
     xmlns:local="clr-namespace:E2S.NginxPanel"
     Title="E2S.NginxPanel">
 
-    <ShellContent
-        
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <OnPlatform x:TypeArguments="ShellItem" >
+        <On Platform="WinUI">
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage" />
+        </On>
+        <On Platform="Android">
+            <ShellContent>
+                <ContentPage>
+                    <Label>Teste</Label>
+                </ContentPage>
+            </ShellContent>
+        </On>
+    </OnPlatform>
 
 </Shell>
