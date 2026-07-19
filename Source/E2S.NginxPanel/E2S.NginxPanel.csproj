@@ -84,6 +84,15 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <AndroidResource Remove="Platforms\Windows\Pages\**" />
+	  <Compile Remove="Platforms\Windows\Pages\**" />
+	  <EmbeddedResource Remove="Platforms\Windows\Pages\**" />
+	  <MauiCss Remove="Platforms\Windows\Pages\**" />
+	  <MauiXaml Remove="Platforms\Windows\Pages\**" />
+	  <None Remove="Platforms\Windows\Pages\**" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="CommunityToolkit.Maui.Markup" Version="7.0.1" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="10.0.51" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="10.0.7" />
@@ -103,10 +112,12 @@
 	  <MauiXaml Update="Sections\Top\TopBar.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\Android\MainPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Platforms\Windows\Pages\" />
 	  <Folder Include="Sections\SidePanel\" />
 	</ItemGroup>
 

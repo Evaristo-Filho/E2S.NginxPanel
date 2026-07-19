@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:TopBar="clr-namespace:E2S.NginxPanel.Sections.Top"
              xmlns:SidePanel="clr-namespace:E2S.NginxPanel.Sections.SidePanel"
-             x:Class="E2S.NginxPanel.MainPage">
+             x:Class="E2S.NginxPanel.Windows.MainPage">
                 
 
     <Grid>

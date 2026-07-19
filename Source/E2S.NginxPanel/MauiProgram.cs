@@ -8,18 +8,26 @@ namespace E2S.NginxPanel
 
         public static MauiApp CreateMauiApp()
         {
-            var builder = MauiApp.CreateBuilder();
+
 
 #if WINDOWS
-            builder
-                .UseMauiApp<App>()
+var builder = MauiApp.CreateBuilder();
+builder.UseMauiApp<App>()
+                .ConfigureFonts(fonts =>
+                {
+                    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+                    fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                }).UseMauiApp<App>().UseMauiCommunityToolkitMarkup();
+            
+#elif ANDROID
+            var builder = MauiApp.CreateBuilder();
+            builder.UseMauiApp<App>()
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
-#elif ANDROID
-            builder.UseMauiApp<App>().UseMauiCommunityToolkitMarkup();
+
 #endif
 #if DEBUG
             builder.Logging.AddDebug();

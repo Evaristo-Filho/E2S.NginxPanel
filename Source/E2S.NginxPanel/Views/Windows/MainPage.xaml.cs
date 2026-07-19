@@ -1,4 +1,6 @@
-﻿namespace E2S.NginxPanel
+﻿using Microsoft.Maui.Controls.PlatformConfiguration.WindowsSpecific;
+
+namespace E2S.NginxPanel.Windows
 {
     public partial class MainPage : ContentPage
     {

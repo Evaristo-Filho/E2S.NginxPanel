@@ -3,19 +3,16 @@
     x:Class="E2S.NginxPanel.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:E2S.NginxPanel"
+    xmlns:win="clr-namespace:E2S.NginxPanel.Windows"
+    xmlns:android="clr-namespace:E2S.NginxPanel.Android"
     Title="E2S.NginxPanel">
 
-    <OnPlatform x:TypeArguments="ShellItem" >
+    <OnPlatform x:TypeArguments="ShellItem">
         <On Platform="WinUI">
-            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage" />
+            <ShellContent  ContentTemplate="{DataTemplate win:MainPage}" Route="MainPage" />
         </On>
         <On Platform="Android">
-            <ShellContent>
-                <ContentPage>
-                    <Label>Teste</Label>
-                </ContentPage>
-            </ShellContent>
+            <ShellContent ContentTemplate="{DataTemplate android:MainPage}" Route="MainPage" />
         </On>
     </OnPlatform>
 
